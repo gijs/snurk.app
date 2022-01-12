@@ -1,0 +1,24 @@
+{
+  "name": "snurk.app",
+  "version": "1.0.0",
+  "description": "snurk.app",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/style.min.css -m",
+    "build:dev": "npx tailwindcss -i ./src/input.css -o ./dist/style.min.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gijs/snurk.app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gijs/snurk.app/issues"
+  },
+  "homepage": "https://github.com/gijs/snurk.app#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.13"
+  }
+}

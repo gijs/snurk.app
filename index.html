@@ -1,1 +1,56 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snurk.app</title>
+    <link rel="stylesheet" href="./dist/style.min.css" />
+    <style>
+      .main::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(./images/bg.png) left center no-repeat;
+        background-size: cover;
+        z-index: -1; }        
+      }
+    </style>
+  </head>
+  <body
+    class="h-screen bg-gradient-to-br from-blue-900 via-blue-900 to-gray-900 text-white"
+  >
+    <div class="container mx-auto px-5 lg:px-20">
+      <!-- <div class="header flex justify-between py-8 text-xl">
+        <div><a href="#">Why Snurk?</a></div>
+        <div><a href="#">Features</a></div>
+        <div><a href="#">Screenshots</a></div>
+      </div> -->
+
+      <div class="main flex flex-col lg:flex-row justify-between pt-12">
+        <div class="w-full lg:w-1/2 flex flex-col justify-center">
+          <h1 class="font-semibold text-7xl p-4 text-white-400">
+            <span class="underline">Snurk</span> will help you stop snoring
+          </h1>
+          <p class="p-4 text-3xl">
+            Snurk detects when you lie on your back and prompts you to roll on
+            your side
+          </p>
+          <a href="#"
+            ><img
+              src="download-appstore.svg"
+              alt="Download on the App Store"
+              class="w-40 m-4"
+          /></a>
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <img src="images/start-sleeping.png" class="w-1/2 rotate-3 flex-shrink-0 flex-grow-0" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
